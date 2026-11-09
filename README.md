@@ -4,6 +4,13 @@
 
 ![](/project.png)
 
+## Inputs
+
+- **material_thickness** (number)
+- **pattern_width** (undefined)
+- **pattern_height** (undefined)
+
+
 
 
  
