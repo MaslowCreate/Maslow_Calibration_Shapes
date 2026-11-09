@@ -7,7 +7,8 @@
   "ioValues": [
     {
       "name": "material_thickness",
-      "ioValue": 0.5
+      "ioValue": 0.5,
+      "currentEquation": "0.5"
     },
     {
       "name": "pattern_width",
@@ -523,8 +524,8 @@
     },
     {
       "atomType": "Gcode",
-      "x": 0.7923,
-      "y": 0.3642,
+      "x": 0.8398,
+      "y": 0.5642,
       "uniqueID": "id-1181",
       "ioValues": [
         {
@@ -546,7 +547,7 @@
         },
         {
           "name": "Cut Through",
-          "ioValue": 0.05
+          "ioValue": 0.15
         },
         {
           "name": "Part Name",
@@ -556,6 +557,107 @@
       ],
       "partName": "Maslow_Calibration_Shapes",
       "sortDirection": "Left"
+    },
+    {
+      "atomType": "GitHubMolecule",
+      "x": 0.7292,
+      "y": 0.6239,
+      "uniqueID": "id-1192",
+      "name": "ExtractParts",
+      "ioValues": [
+        {
+          "name": "Input",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-1189",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.0254,
+          "y": 0.1538,
+          "uniqueID": "id-1190",
+          "type": "partselect",
+          "options": [],
+          "selectedLeafIndexes": [
+            3,
+            2,
+            4,
+            5
+          ]
+        },
+        {
+          "atomType": "Code",
+          "x": 0.3913,
+          "y": 0.7743,
+          "uniqueID": "id-1191",
+          "ioValues": [
+            {
+              "name": "input",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "interpreterVersion": 1,
+          "code": "function run(input: Assembly) {\n  const res = input.onLeafs((leaf) => {\n    if (leaf.selection?.part && leaf.selection.part) {\n      return leaf;\n    } else {\n      return null;\n    }\n  })\n  console.log(res)\n  return res;\n}",
+          "compiledCode": "\"use strict\";\nfunction run(input) {\n    const res = input.onLeafs((leaf) => {\n        if (leaf.selection?.part && leaf.selection.part) {\n            return leaf;\n        }\n        else {\n            return null;\n        }\n    });\n    console.log(res);\n    return res;\n}\n"
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "input",
+          "ap1ID": "id-1190",
+          "ap2ID": "id-1191"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-1191",
+          "ap2ID": "id-1189"
+        }
+      ],
+      "parentRepo": {
+        "contentURL": "https://raw.githubusercontent.com/tristan-huber/ExtractParts/master/project.abundance?sanitize=true",
+        "dateCreated": "2026-07-24T20:42:33Z",
+        "dateModified": "2026-07-24T20:46:47Z",
+        "description": "Select sub-component parts of an assembly by click and return a new assembly with just the selected parts",
+        "forks": 0,
+        "githubMoleculesUsed": [],
+        "html_url": "https://github.com/tristan-huber/ExtractParts",
+        "lastFoundGit": "2026-11-09T10:23:38.960Z",
+        "likes": 0,
+        "owner": "tristan-huber",
+        "pngURL": "https://raw.githubusercontent.com/tristan-huber/ExtractParts/master/project.png?sanitize=true",
+        "privateRepo": false,
+        "pullRequests": [],
+        "ranking": 2,
+        "readme": "https://raw.githubusercontent.com/tristan-huber/ExtractParts/master/README.md?sanitize=true",
+        "searchField": "extractparts tristan-huber select sub-component parts of an assembly by click and return a new assembly with just the selected parts abundance-tool",
+        "svgURL": "https://raw.githubusercontent.com/tristan-huber/ExtractParts/master/project.svg?sanitize=true",
+        "topMoleculeID": "",
+        "topics": [
+          "abundance-tool"
+        ],
+        "userRanking": 0,
+        "userSetAsThumbnail": false,
+        "yyyy": 2026,
+        "repoName": "ExtractParts",
+        "isLocal": false
+      },
+      "unitsKey": "Unitless",
+      "fileTypeVersion": 1,
+      "scaleToProjectUnits": true,
+      "lastReloadedFromGithubAt": 1794247802067
     },
     {
       "atomType": "Output",
@@ -704,14 +806,19 @@
       "ap2ID": "id-1036"
     },
     {
-      "ap2Name": "geometry",
+      "ap2Name": "Input",
       "ap1ID": "id-1177",
-      "ap2ID": "id-1181"
+      "ap2ID": "id-1192"
     },
     {
       "ap2Name": "number or geometry",
       "ap1ID": "id-1177",
       "ap2ID": "id-2"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-1192",
+      "ap2ID": "id-1181"
     },
     {
       "ap2Name": "geometry",
