@@ -50,20 +50,22 @@
             },
             {
               "name": "y length",
-              "ioValue": 4
+              "ioValue": 8,
+              "currentEquation": "8"
             }
           ]
         },
         {
           "atomType": "GitHubMolecule",
-          "x": 0.3319,
-          "y": 0.347,
+          "x": 0.1719,
+          "y": 0.4806,
           "uniqueID": "id-271",
           "name": "puzzle_joint",
           "ioValues": [
             {
               "name": "width",
-              "ioValue": 4
+              "ioValue": 8,
+              "currentEquation": "8"
             },
             {
               "name": "diam",
@@ -444,7 +446,7 @@
               "ioValues": [
                 {
                   "name": "width",
-                  "ioValue": 4
+                  "ioValue": 8
                 },
                 {
                   "name": "offset",
@@ -811,7 +813,7 @@
               "ioValues": [
                 {
                   "name": "Number",
-                  "ioValue": 5,
+                  "ioValue": 10,
                   "currentEquation": "repeats"
                 },
                 {
@@ -980,7 +982,7 @@
                     },
                     {
                       "name": "count",
-                      "ioValue": 5
+                      "ioValue": 10
                     },
                     {
                       "name": "distX",
@@ -1491,8 +1493,8 @@
         },
         {
           "atomType": "Rotate",
-          "x": 0.412,
-          "y": 0.4067,
+          "x": 0.2565,
+          "y": 0.4567,
           "uniqueID": "id-331",
           "ioValues": [
             {
@@ -1515,8 +1517,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.4727,
-          "y": 0.3552,
+          "x": 0.3796,
+          "y": 0.403,
           "uniqueID": "id-332",
           "ioValues": [
             {
@@ -1525,11 +1527,12 @@
             },
             {
               "name": "xDist",
-              "ioValue": 2
+              "ioValue": 1
             },
             {
               "name": "yDist",
-              "ioValue": 0.1
+              "ioValue": -4,
+              "currentEquation": "-4"
             },
             {
               "name": "zDist",
@@ -1539,8 +1542,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.4766,
-          "y": 0.5522,
+          "x": 0.3841,
+          "y": 0.5791,
           "uniqueID": "id-333",
           "ioValues": [
             {
@@ -1549,11 +1552,13 @@
             },
             {
               "name": "xDist",
-              "ioValue": 4
+              "ioValue": -1,
+              "currentEquation": "-1"
             },
             {
               "name": "yDist",
-              "ioValue": 0.1
+              "ioValue": -4,
+              "currentEquation": "-4"
             },
             {
               "name": "zDist",
@@ -1563,8 +1568,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.6652,
-          "y": 0.4425,
+          "x": 0.5853,
+          "y": 0.2418,
           "uniqueID": "id-334",
           "ioValues": [
             {
@@ -1604,6 +1609,115 @@
               "ioValue": 0.5
             }
           ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.2708,
+          "y": 0.7701,
+          "uniqueID": "id-910",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": -4,
+              "currentEquation": "-4"
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Rectangle",
+          "x": 0.3997,
+          "y": 0.8657,
+          "uniqueID": "id-917",
+          "ioValues": [
+            {
+              "name": "x length",
+              "ioValue": 1
+            },
+            {
+              "name": "y length",
+              "ioValue": 1,
+              "currentEquation": "1"
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.4857,
+          "y": 0.7881,
+          "uniqueID": "id-921",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": -1,
+              "currentEquation": "-1"
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.528,
+          "y": 0.6657,
+          "uniqueID": "id-927",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 1,
+              "currentEquation": "1"
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Fusion",
+          "x": 0.6406,
+          "y": 0.791,
+          "uniqueID": "id-933",
+          "ioValues": [
+            {
+              "name": "Shape2",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Shape3",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "unionType": "Fusion"
         }
       ],
       "allConnectors": [
@@ -1613,14 +1727,19 @@
           "ap2ID": "id-327"
         },
         {
+          "ap2Name": "Shape 1",
+          "ap1ID": "id-270",
+          "ap2ID": "id-334"
+        },
+        {
           "ap2Name": "geometry",
           "ap1ID": "id-271",
           "ap2ID": "id-331"
         },
         {
-          "ap2Name": "Shape 1",
-          "ap1ID": "id-327",
-          "ap2ID": "id-334"
+          "ap2Name": "geometry",
+          "ap1ID": "id-271",
+          "ap2ID": "id-910"
         },
         {
           "ap2Name": "geometry",
@@ -1651,154 +1770,41 @@
           "ap2Name": "number or geometry",
           "ap1ID": "id-335",
           "ap2ID": "id-268"
+        },
+        {
+          "ap2Name": "Shape3",
+          "ap1ID": "id-910",
+          "ap2ID": "id-933"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-917",
+          "ap2ID": "id-921"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-917",
+          "ap2ID": "id-927"
+        },
+        {
+          "ap2Name": "Shape2",
+          "ap1ID": "id-921",
+          "ap2ID": "id-933"
         }
       ],
       "fileTypeVersion": 1
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.3763,
-      "y": 0.3582,
-      "uniqueID": "id-608",
-      "name": "Linear-Pattern",
-      "ioValues": [
-        {
-          "name": "Number",
-          "ioValue": 4
-        },
-        {
-          "name": "Dist",
-          "ioValue": 15,
-          "currentEquation": "15"
-        }
-      ],
-      "topLevel": false,
-      "allAtoms": [
-        {
-          "atomType": "Output",
-          "x": 0.98,
-          "y": 0.5,
-          "uniqueID": "id-603",
-          "ioValues": [
-            {
-              "name": "number or geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ]
-        },
-        {
-          "atomType": "Input",
-          "x": 0.0254,
-          "y": 0.1538,
-          "uniqueID": "id-604",
-          "name": "Number",
-          "type": "number",
-          "options": []
-        },
-        {
-          "atomType": "Input",
-          "x": 0.0254,
-          "y": 0.2462,
-          "uniqueID": "id-605",
-          "name": "Dist",
-          "type": "number",
-          "options": []
-        },
-        {
-          "atomType": "Input",
-          "x": 0.0254,
-          "y": 0.3385,
-          "uniqueID": "id-606",
-          "name": "Geometry",
-          "type": "number",
-          "options": []
-        },
-        {
-          "atomType": "Code",
-          "x": 0.4808,
-          "y": 0.4986,
-          "uniqueID": "id-607",
-          "ioValues": [
-            {
-              "name": "shape",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "count",
-              "ioValue": 4
-            },
-            {
-              "name": "dist",
-              "ioValue": 15
-            }
-          ],
-          "interpreterVersion": 1,
-          "code": "function run(\n  shape: Assembly | undefined = undefined,\n  count: number = 3,\n  dist: number = 10,\n): Assembly {\n  if (!shape) {\n    throw new Error(\"Must connect a shape to this atom\");\n  }\n\n  const copies: Assembly[] = [];\n\n  for (let i = 0; i < count; i++) {\n    const offset = dist * i;\n\n    // Clone the input shape and translate every leaf along the X axis.\n    const moved = new Assembly(shape).onLeafs((leaf) => {\n      leaf.geometry = leaf.geometry.translate(offset, 0, 0);\n      return leaf;\n    });\n\n    if (moved) copies.push(moved);\n  }\n\n  // Combine all the translated copies into a single assembly.\n  return new Assembly({ geometry: copies });\n}",
-          "compiledCode": "\"use strict\";\nfunction run(shape = undefined, count = 3, dist = 10) {\n    if (!shape) {\n        throw new Error(\"Must connect a shape to this atom\");\n    }\n    const copies = [];\n    for (let i = 0; i < count; i++) {\n        const offset = dist * i;\n        // Clone the input shape and translate every leaf along the X axis.\n        const moved = new Assembly(shape).onLeafs((leaf) => {\n            leaf.geometry = leaf.geometry.translate(offset, 0, 0);\n            return leaf;\n        });\n        if (moved)\n            copies.push(moved);\n    }\n    // Combine all the translated copies into a single assembly.\n    return new Assembly({ geometry: copies });\n}\n"
-        }
-      ],
-      "allConnectors": [
-        {
-          "ap2Name": "count",
-          "ap1ID": "id-604",
-          "ap2ID": "id-607"
-        },
-        {
-          "ap2Name": "dist",
-          "ap1ID": "id-605",
-          "ap2ID": "id-607"
-        },
-        {
-          "ap2Name": "shape",
-          "ap1ID": "id-606",
-          "ap2ID": "id-607"
-        },
-        {
-          "ap2Name": "number or geometry",
-          "ap1ID": "id-607",
-          "ap2ID": "id-603"
-        }
-      ],
-      "parentRepo": {
-        "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Linear-Pattern/master/project.abundance?sanitize=true",
-        "dateCreated": "2025-02-19T00:40:13Z",
-        "dateModified": "2026-06-30T00:49:07Z",
-        "description": "Returns the input shape formed into an assembly translated n times",
-        "forks": 1,
-        "githubMoleculesUsed": [],
-        "html_url": "https://github.com/BarbourSmith/Linear-Pattern",
-        "lastFoundGit": "2026-11-09T02:23:38.867Z",
-        "likes": 0,
-        "owner": "BarbourSmith",
-        "pngURL": "https://raw.githubusercontent.com/BarbourSmith/Linear-Pattern/master/project.png?sanitize=true",
-        "privateRepo": false,
-        "pullRequests": [],
-        "ranking": 2,
-        "readme": "https://raw.githubusercontent.com/BarbourSmith/Linear-Pattern/master/README.md?sanitize=true",
-        "searchField": "linear-pattern barboursmith returns the input shape formed into an assembly translated n times ",
-        "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Linear-Pattern/master/project.svg?sanitize=true",
-        "topMoleculeID": "",
-        "topics": [],
-        "userRanking": 0.2,
-        "userSetAsThumbnail": false,
-        "yyyy": 2025,
-        "repoName": "Linear-Pattern",
-        "isLocal": false
-      },
-      "unitsKey": "MM",
-      "fileTypeVersion": 1,
-      "lastReloadedFromGithubAt": 1794207454588
-    },
-    {
-      "atomType": "GitHubMolecule",
-      "x": 0.5,
-      "y": 0.6,
+      "x": 0.2891,
+      "y": 0.7075,
       "uniqueID": "id-638",
       "name": "Linear-Pattern",
       "ioValues": [
         {
           "name": "Number",
-          "ioValue": 4
+          "ioValue": 6,
+          "currentEquation": "6"
         },
         {
           "name": "Geometry",
@@ -1806,7 +1812,8 @@
         },
         {
           "name": "distX",
-          "ioValue": 11
+          "ioValue": 2,
+          "currentEquation": "2"
         },
         {
           "name": "distY",
@@ -1966,11 +1973,11 @@
             },
             {
               "name": "count",
-              "ioValue": 4
+              "ioValue": 6
             },
             {
               "name": "distX",
-              "ioValue": 11
+              "ioValue": 2
             },
             {
               "name": "distY",
@@ -2165,17 +2172,63 @@
         },
         {
           "name": "y length",
-          "ioValue": 1,
-          "currentEquation": "1"
+          "ioValue": 1
+        }
+      ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.4355,
+      "y": 0.5164,
+      "uniqueID": "id-902",
+      "ioValues": [
+        {
+          "name": "retain",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "remove",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.3516,
+      "y": 0.8239,
+      "uniqueID": "id-906",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 10
         }
       ]
     }
   ],
   "allConnectors": [
     {
+      "ap2Name": "retain",
+      "ap1ID": "id-266",
+      "ap2ID": "id-902"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-638",
+      "ap2ID": "id-906"
+    },
+    {
       "ap2Name": "Geometry",
       "ap1ID": "id-8",
-      "ap2ID": "id-608"
+      "ap2ID": "id-638"
+    },
+    {
+      "ap2Name": "remove",
+      "ap1ID": "id-906",
+      "ap2ID": "id-902"
     }
   ],
   "unitsKey": "Inches",
