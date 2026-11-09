@@ -1596,8 +1596,8 @@
         },
         {
           "atomType": "Extrude",
-          "x": 0.7746,
-          "y": 0.6007,
+          "x": 0.8932,
+          "y": 0.6597,
           "uniqueID": "id-335",
           "ioValues": [
             {
@@ -1622,12 +1622,13 @@
             },
             {
               "name": "xDist",
-              "ioValue": -4,
-              "currentEquation": "-4"
+              "ioValue": -4.3,
+              "currentEquation": "-4.3"
             },
             {
               "name": "yDist",
-              "ioValue": 0
+              "ioValue": 0,
+              "currentEquation": "0"
             },
             {
               "name": "zDist",
@@ -1718,6 +1719,38 @@
             }
           ],
           "unionType": "Fusion"
+        },
+        {
+          "atomType": "Difference",
+          "x": 0.7018,
+          "y": 0.5731,
+          "uniqueID": "id-941",
+          "ioValues": [
+            {
+              "name": "retain",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "remove",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Difference",
+          "x": 0.8255,
+          "y": 0.3672,
+          "uniqueID": "id-949",
+          "ioValues": [
+            {
+              "name": "retain",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "remove",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
         }
       ],
       "allConnectors": [
@@ -1762,9 +1795,9 @@
           "ap2ID": "id-334"
         },
         {
-          "ap2Name": "geometry",
+          "ap2Name": "retain",
           "ap1ID": "id-334",
-          "ap2ID": "id-335"
+          "ap2ID": "id-941"
         },
         {
           "ap2Name": "number or geometry",
@@ -1772,9 +1805,9 @@
           "ap2ID": "id-268"
         },
         {
-          "ap2Name": "Shape3",
+          "ap2Name": "remove",
           "ap1ID": "id-910",
-          "ap2ID": "id-933"
+          "ap2ID": "id-949"
         },
         {
           "ap2Name": "geometry",
@@ -1790,6 +1823,26 @@
           "ap2Name": "Shape2",
           "ap1ID": "id-921",
           "ap2ID": "id-933"
+        },
+        {
+          "ap2Name": "Shape3",
+          "ap1ID": "id-927",
+          "ap2ID": "id-933"
+        },
+        {
+          "ap2Name": "remove",
+          "ap1ID": "id-933",
+          "ap2ID": "id-941"
+        },
+        {
+          "ap2Name": "retain",
+          "ap1ID": "id-941",
+          "ap2ID": "id-949"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-949",
+          "ap2ID": "id-335"
         }
       ],
       "fileTypeVersion": 1
@@ -2177,58 +2230,50 @@
       ]
     },
     {
-      "atomType": "Difference",
-      "x": 0.4355,
-      "y": 0.5164,
-      "uniqueID": "id-902",
-      "ioValues": [
-        {
-          "name": "retain",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "remove",
-          "ioValue": "__GEOMETRY_INPUT__"
-        }
-      ]
-    },
-    {
-      "atomType": "Extrude",
-      "x": 0.3516,
-      "y": 0.8239,
-      "uniqueID": "id-906",
+      "atomType": "ExtractTag",
+      "x": 0.332,
+      "y": 0.2507,
+      "uniqueID": "id-974",
+      "name": "Extract Not Keep Out",
       "ioValues": [
         {
           "name": "geometry",
           "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "tagIndex": 0,
+      "selectedTags": [],
+      "includeUntagged": false,
+      "notKeepOut": true
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.4368,
+      "y": 0.5881,
+      "uniqueID": "id-977",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 2
         },
         {
-          "name": "height",
-          "ioValue": 10
+          "name": "y length",
+          "ioValue": 4,
+          "currentEquation": "4"
         }
       ]
     }
   ],
   "allConnectors": [
     {
-      "ap2Name": "retain",
-      "ap1ID": "id-266",
-      "ap2ID": "id-902"
-    },
-    {
       "ap2Name": "geometry",
-      "ap1ID": "id-638",
-      "ap2ID": "id-906"
+      "ap1ID": "id-266",
+      "ap2ID": "id-974"
     },
     {
       "ap2Name": "Geometry",
       "ap1ID": "id-8",
       "ap2ID": "id-638"
-    },
-    {
-      "ap2Name": "remove",
-      "ap1ID": "id-906",
-      "ap2ID": "id-902"
     }
   ],
   "unitsKey": "Inches",
