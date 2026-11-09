@@ -7,8 +7,8 @@
   "ioValues": [
     {
       "name": "material_thickness",
-      "ioValue": 0.5,
-      "currentEquation": "0.5"
+      "ioValue": 0.15,
+      "currentEquation": "0.15"
     },
     {
       "name": "pattern_width",
@@ -517,7 +517,7 @@
         },
         {
           "name": "height",
-          "ioValue": 0.5,
+          "ioValue": 0.15,
           "currentEquation": "10"
         }
       ]
@@ -538,7 +538,8 @@
         },
         {
           "name": "Passes",
-          "ioValue": 3
+          "ioValue": 1,
+          "currentEquation": "1"
         },
         {
           "name": "Speed",
