@@ -11,12 +11,12 @@
     },
     {
       "name": "pattern_width",
-      "ioValue": 60
+      "ioValue": 63
     },
     {
       "name": "pattern_height",
-      "ioValue": 24,
-      "currentEquation": "24"
+      "ioValue": 22,
+      "currentEquation": "22"
     }
   ],
   "topLevel": true,
@@ -50,12 +50,12 @@
         },
         {
           "name": "xDist",
-          "ioValue": -29,
+          "ioValue": -30.5,
           "currentEquation": "-pattern_width / 2 + 1"
         },
         {
           "name": "yDist",
-          "ioValue": -6,
+          "ioValue": -5,
           "currentEquation": "-pattern_height / 2 + 6"
         },
         {
@@ -105,7 +105,7 @@
         },
         {
           "name": "distX",
-          "ioValue": 28,
+          "ioValue": 29.5,
           "currentEquation": "(pattern_width - 4) / 2"
         },
         {
@@ -271,7 +271,7 @@
             },
             {
               "name": "distX",
-              "ioValue": 28
+              "ioValue": 29.5
             },
             {
               "name": "distY",
@@ -466,12 +466,12 @@
         },
         {
           "name": "xDist",
-          "ioValue": -29,
+          "ioValue": -30.5,
           "currentEquation": "-pattern_width / 2 + 1"
         },
         {
           "name": "yDist",
-          "ioValue": 10,
+          "ioValue": 9,
           "currentEquation": "pattern_height / 2 - 2"
         },
         {
@@ -537,7 +537,7 @@
         },
         {
           "name": "Passes",
-          "ioValue": 2
+          "ioValue": 3
         },
         {
           "name": "Speed",
