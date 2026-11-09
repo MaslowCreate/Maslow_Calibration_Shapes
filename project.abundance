@@ -11,11 +11,12 @@
     },
     {
       "name": "pattern_width",
-      "ioValue": 48
+      "ioValue": 60
     },
     {
       "name": "pattern_height",
-      "ioValue": 24
+      "ioValue": 24,
+      "currentEquation": "24"
     }
   ],
   "topLevel": true,
@@ -49,7 +50,7 @@
         },
         {
           "name": "xDist",
-          "ioValue": -23,
+          "ioValue": -29,
           "currentEquation": "-pattern_width / 2 + 1"
         },
         {
@@ -104,7 +105,7 @@
         },
         {
           "name": "distX",
-          "ioValue": 22,
+          "ioValue": 28,
           "currentEquation": "(pattern_width - 4) / 2"
         },
         {
@@ -270,7 +271,7 @@
             },
             {
               "name": "distX",
-              "ioValue": 22
+              "ioValue": 28
             },
             {
               "name": "distY",
@@ -465,7 +466,7 @@
         },
         {
           "name": "xDist",
-          "ioValue": -23,
+          "ioValue": -29,
           "currentEquation": "-pattern_width / 2 + 1"
         },
         {
