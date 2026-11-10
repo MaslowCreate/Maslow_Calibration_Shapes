@@ -538,8 +538,7 @@
         },
         {
           "name": "Passes",
-          "ioValue": 1,
-          "currentEquation": "1"
+          "ioValue": 2
         },
         {
           "name": "Speed",
@@ -807,6 +806,11 @@
       "ap2ID": "id-1036"
     },
     {
+      "ap2Name": "geometry",
+      "ap1ID": "id-1177",
+      "ap2ID": "id-1181"
+    },
+    {
       "ap2Name": "Input",
       "ap1ID": "id-1177",
       "ap2ID": "id-1192"
@@ -815,11 +819,6 @@
       "ap2Name": "number or geometry",
       "ap1ID": "id-1177",
       "ap2ID": "id-2"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-1192",
-      "ap2ID": "id-1181"
     },
     {
       "ap2Name": "geometry",
